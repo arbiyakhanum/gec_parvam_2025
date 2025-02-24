@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+        .contact-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 50px;
+        }
+        .contact-info, .contact-form {
+            flex: 1;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            font-size: 2rem;
+            color: #1a294a;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1rem;
+            color: #666;
+            margin: 5px 0;
+        }
+        .social-media a {
+            margin-right: 10px;
+            color: #1a294a;
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        form button {   
+            padding: 10px 20px;
+            border: none;
+            background-color: #1a294a;
+            color: white;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #0d1e3d;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Register</a></li>
+                <br><br>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header><br><br><br>
+    <div class="container">
+        <div class="contact-section">
+            <div class="contact-info">
+                <h2>CONTACT INFO</h2>
+                <p>📞 +88 018 785 454 589</p>
+                <p>✉️ devitems@email.com</p>
+                <p>📍 House 09, Road 32, Mohammadpur, Dhaka-1200, UK</p>
+                <h2>SOCIAL MEDIA</h2>
+                <div class="social-media">
+                    <a href="#">🌐</a>
+                    <a href="#">📱</a>
+                    <a href="#">📧</a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h2>SEND YOUR MESSAGE</h2>
+                <form>
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Message" rows="5" required></textarea>
+                    <button type="submit">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.4060347815584!2d76.11921397484205!3d13.009795587309107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba5485b583251b7%3A0x513d895c8cc75816!2sGovernment%20Engineering%20College%2C%20Hassan!5e0!3m2!1sen!2sin!4v1740312826664!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div><br><br>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2><span>📖</span> Study</h2>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                    alteration.</p>
+                <div class="social-icons">
+                    <a href="#">📘</a>
+                    <a href="#">📰</a>
+                    <a href="#">🧬</a>
+                    <a href="#">📌</a>
+                    <a href="#">📷</a>
+                </div>
+            </div>
+            <div class="footer-contact">
+                
+                <h1>Get In Touch</h1>
+                <p><i class="fa-solid fa-phone"></i>+12652316925</p>
+                <p><i class="fa-solid fa-envelope"></i>arbiya@gmail.com</p>
+                <p><i class="fa-solid fa-earth-americas"></i>www.devitems.com</p>
+                <p><i class="fa-solid fa-location-dot"></i>Hassan, Karnataka</p>
+            
+        </div>
+        </div>
+        <div class="footer-bottom">
+            © 2022 Study. Made with ❤️ By HasThemes
+            <br>
+            <a href="#">Privacy Policy</a>, <a href="#">Terms & Conditions</a>
+        </div>
+    </footer>
+
+</body>
+</html>
+

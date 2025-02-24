@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font in CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+        /* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap'); */
+        body{
+            font-family: "Open Sans", serif;
+            font-optical-sizing: auto;
+            font-weight: 900;
+            font-style: normal;
+            font-variation-settings:
+                "wdth" 100;
+
+                
+            /* font-family: "Open Sans", serif;
+            font-optical-sizing: auto;
+            font-weight:100px;
+            font-style: normal;
+            font-variation-settings:
+                "wdth" 100; */
+        }
+        .container{
+            border: 2px solid black;
+            background-color: bisque;
+            padding: 20px;
+            width:300px;
+            height:400px;
+        }
+        .inner-container{
+            border:1px solid rgb(184, 71, 201);
+            padding:20px;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="inner-container">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, atque quidem itaque dolorem dolor necessitatibus magnam doloribus amet a excepturi voluptas, iusto delectus dignissimos cumque minus iste aperiam consequatur laborum.
+        </div>
+    </div>
+</body>
+</html>

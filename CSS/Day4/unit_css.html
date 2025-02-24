@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Units in Css</title>
+    <style>
+        .first{
+            background-color: azure;
+            height: 120px;
+            width:240px;
+            border: 2px solid cyan;
+        }
+
+        .em_parent{
+            background-color: rgb(129, 171, 130);
+            height:300px;
+            width:200px;
+            border: 2px solid rgb(54, 211, 85);
+            padding: 20px;
+            font-size: 16px;
+        }
+        .sec{
+            background-color: rgb(49, 164, 51);
+            height: 4em;
+            width:18em;
+            border: 2px solid rgb(21, 210, 59);
+        }
+
+
+        html{
+            font-size: 30px;
+        }
+        .rem_font{
+            width: 200px;
+            height: 300px;
+            background-color: bisque;
+            font-size: 2rem;
+            border:2px solid rgb(158, 66, 97);
+        }
+
+
+    </style>
+</head>
+<body>
+    <p>1.px</p>
+    <p>2.em</p>
+    <p>3.rem</p>
+    <p>4.vw</p>
+    <p>5.vh</p>
+
+    <h1>1.px(pixel)</h1>
+    <div class="first"></div>
+
+    <h1>2.em</h1>
+    <div class="em_parent">
+        <div class="sec">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo incidunt tempora corrupti quod qui laboriosam!</div>
+    </div>
+
+    <h1>3. rem</h1>
+    <div class="rem_font">
+        Lorem ipsum dolor sit amet consectetur 
+    </div>
+    
+    
+</body>
+</html>

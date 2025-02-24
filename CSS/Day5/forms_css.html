@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: rgb(205,101,206);
+background: radial-gradient(circle, rgba(205,101,206,1) 0%, rgba(252,241,246,1) 0%, rgba(249,165,232,0.949544783733806) 100%, rgba(253,187,45,1) 100%);
+        }
+        .container{
+            background-color: rgb(247, 237, 246);
+            width: 20vw;
+            height: 20vh;
+            margin: 20px auto;
+            margin-top: 100px;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow:3px 3px 5px black ;
+            /* align-self: center; */
+        }
+        h3{
+            text-align: center;
+            margin-bottom: 10px;
+            text-shadow: 1px 0.1px 2px plum;
+        }
+        .input-group{
+            width: 100%;
+            position: relative;
+        }
+        .input-group input{
+            width: 100%;
+            outline: none;
+            margin-bottom: 10px;
+            border: 1px solid gray;
+            border-radius: 5px;
+            padding: 4px 15px;
+            font-size: 12px;
+        }
+        .icon{
+            font-size: 10px;
+            position: absolute;
+            right: 6px;
+            top: 8px;
+        }
+        #submit{
+            width: 100%;
+            font: 14px;
+            border: 1px solid rgb(230, 169, 233);
+            background-color: rgb(225, 188, 227);
+            color: white;
+            border-radius: 5px;
+            /*transition: background-color 1s, border 1s;*/
+            transition: all 0.5s;
+            padding: 4px 10px;
+
+        }
+        #submit:hover{
+            cursor: pointer;
+            background-color: rgb(240, 131, 231);
+            border: 1px solid rgb(156, 22, 142);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>Contact Form</h3>
+        <form action="#" method="post" id="contact_form">
+            <div class="input-group">
+                <input type="text" name="name" id="name" placeholder="Username"/>
+                <i class="fa-solid fa-user icon"></i>
+            </div>
+            <div class="input-group">
+                <input type="email" name="email" id="email" placeholder="Email">
+                <i class="fa-solid fa-envelope icon"></i>
+            </div>
+            <input type="submit" value="Submit" id="submit"><br><br>
+            <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.4060345826133!2d76.1217889!3d13.009795599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba5485b583251b7%3A0x513d895c8cc75816!2sGovernment%20Engineering%20College%2C%20Hassan!5e0!3m2!1sen!2sin!4v1740134616782!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
+            <!-- for more icon visit the following link(https://fontawesome.com/icons) -->
+        </form>
+    </div>
+</body>
+</html>

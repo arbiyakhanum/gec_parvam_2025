@@ -1,0 +1,28 @@
+h3{
+    color: chartreuse;
+    font-size:medium;
+}
+
+#name{
+    color:darkgoldenrod;
+    background-color: aqua;
+}
+
+.ptag{
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+*{
+    background-color: burlywood;
+    padding: 20px;
+}
+
+h1,h2{
+    font-style: oblique;
+    font-variant: initial;
+}
+
+input[type="text"]{
+    font-weight: 800;
+}

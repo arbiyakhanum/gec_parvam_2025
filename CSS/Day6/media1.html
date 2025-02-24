@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 88vw;
+            height: 60vh;
+            border: 2px solid black;
+            padding: 10px;
+            display: flex;
+            /* flex-direction: column; */
+            gap: 10px;
+        }
+        .child{
+            width:200px;
+            height: 200px;
+            border: 2px solid grey;
+        }
+        .fir{
+            background-color: aqua;
+
+        }
+
+        .sec{
+            background-color: antiquewhite;
+        }
+
+        .thi{
+            background-color: beige;
+        }
+
+        .fou{
+            background-color: rosybrown;
+        }
+        .fiv{
+            background-color: palegoldenrod;
+        }
+
+
+        @media screen and (max-width:500px) {
+            .container{
+                flex-direction: column;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="child fir">1</div>
+    <div class="child sec">2</div>
+    <div class="child thi">3</div>
+    <div class="child fou">4</div>
+    <div class="child fiv">5</div>
+</div>
+    
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex in CSS</title>
+    <style>
+        *{
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+
+        body{
+            padding: 30px;
+            margin: 30px;
+        }
+        .container{
+            width: 50vw;
+            height:60vh;
+            border: 2px solid red;
+            display: flex;
+            flex-direction: column;
+            justify-content:space-evenly;
+            /* justify is works on vertically */
+            /* align-items works horizontally */
+            align-items: center;
+            /* gap: 10px; */
+            /* flex-wrap: wrap; */
+            align-content:center;
+        }
+        /* justify-content:space-evenly it provides even spaces btw boxes */
+
+        .child{
+            width: 200px;
+            height: 60px;
+            border: 2px solid rgb(127, 5, 117);
+            background-color: rgb(197, 192, 201);
+            text-align: center;
+        }
+
+        .fiv{
+            align-self:flex-end;
+        }
+
+        .first{
+            /* flex-grow: 1; */
+            align-self:flex-start;
+        }
+
+        .thi{
+            flex-shrink:6;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <!-- flex is used to arrnage the data in 1D array either  row or col-->
+     <!-- div{$}*5 -->
+      <h1>Hello this is Flex</h1>
+      <div class="container">
+        <div class="child first">1</div>
+        <div class="child sec">2</div>
+        <div class="child thi">3</div>
+        <div class="child four">4</div>
+        <div class="child fiv">5</div>
+       
+      </div>
+
+
+      <!-- align self -->
+       
+
+
+       <!-- flex grow -->
+    
+</body>
+</html>

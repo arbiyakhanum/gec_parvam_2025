@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* text-align: center; */
+    background-color:bisque;
+    scroll-behavior: smooth;
+}
+
+.profile{
+    text-align: center;
+   font-weight: bolder;
+}
+
+nav{
+    background-color:gray;
+    /* font-style: normal; */
+    text-align: right;
+    font-weight: bolder;
+    font-size: larger;
+    text-decoration: aqua;
+    padding: 20px;
+}
+
+.nav{
+color:black;
+}
+
+
+
+#about{
+    margin:0px;
+    padding: 20px 20px;
+    font-weight: bolder;
+}
+.image{
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.content{
+    flex: 1;
+}
+
+#home{
+    margin:6px;
+    padding:20px;
+    border: 20px;
+    background-color: indianred;
+    border-radius: 10px;
+}
+
+
+
+/* 
+*{
+   margin: 0; 
+   padding:0;
+   font-family: poppins,sans-serif;
+   text-decoration: none;
+}
+header{
+    background-color:chartreuse;
+    font-size: larger;
+    font-weight: 300;
+    text-align: right;
+    text-size-adjust: 50px;
+    background-clip: content-box;
+    display: flex;
+} */

@@ -1,0 +1,6 @@
+1. Element selectors ->p{},div{}
+2. Index selectors -># (unique)
+3. Class selectors ->. 
+4. universal selectors ->* (entire page)
+5. Group selectors ->p,div ,span{}
+6. attribute selectors ->input[type="text"]{ }

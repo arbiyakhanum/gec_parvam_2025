@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables in CSS</title>
+</head>
+<style>
+    :root {
+        --aqua: rgb(218, 252, 252);
+        --green: rgb(207, 252, 117);
+        --border: 2px solid black;
+    }
+
+    .ptag1 {
+        background-color: var(--aqua);
+        border: var(--border);
+
+    }
+
+    .ptag2 {
+        background-color: var(--aqua);
+        border: var(--border);
+
+    }
+
+    .divtag {
+        background-color: var(--green);
+        border: var(--border);
+    }
+    .container{
+        margin: 20px;
+        border: 2px solid red;
+        width: 30vw;
+        height: 60vh;
+        padding: 20px;
+    }
+    .child{
+        border: 2px solid blue;
+        width:60%;
+        height: 30%;
+        /* margin: 20px; */
+        }
+        .fir{
+            background-color: antiquewhite;
+            z-index: 2;
+            position: relative;
+            top: 100px;
+            left: 200px;
+        }
+        .sec{
+            background-color: plum;
+            z-index: 10;
+            position: relative;
+        }
+</style>
+
+<body>
+    <p class="ptag1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo possimus cum doloribus ea expedita,
+        praesentium provident quae reprehenderit ducimus ex corporis aliquam facere? Odit, vitae excepturi soluta ex
+        incidunt harum?</p>
+    <p class="ptag2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, autem in tenetur eaque magni rem
+        debitis praesentium architecto commodi adipisci expedita fuga ex quasi veritatis! Odit in quae excepturi
+        repellat.</p>
+    <div class="divtag">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, magnam officiis corrupti iusto
+        quos delectus culpa velit reprehenderit doloremque ex, aspernatur sapiente iure rerum itaque voluptatem
+        molestiae sit sunt ad.</div>
+
+        <div class="container">
+            <div class="child fir">1</div>
+            <div class="child sec"> 2</div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+h1{
+    margin: 20px;
+    padding: 22px;
+    border:10px;
+    color: lawngreen;
+}
+p{
+    color:blueviolet;
+    text-align: center;
+    text-decoration:double;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: small;
+}
+div{
+    margin:10px;
+    border: 18px;
+    background-color:grey;
+    font-size: small;
+}
+button{
+    color: blanchedalmond;
+    background-color:darkcyan;
+    padding: 0px;
+}
+button:hover{
+    background-color: hotpink;
+}

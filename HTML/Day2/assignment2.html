@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2> Simple form</h2>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Personal information</legend>
+
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name"><br><br>     
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email"><br><br> 
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="Enter your password"><br><br>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" name="phone" id="phone" placeholder="Enter your Phone number"><br><br>
+
+            <label for="age">Age:</label>
+            <input type="age" name="age" id="age" placeholder="Enter your age"><br><br>
+
+            <label for="dob">Date of birth:</label>
+            <input type="date" name="dob" id="dob"><br><br>
+
+            <label for="time">Preffered Time:</label>
+            <input type="time" name="time" id="time"><br><br>
+            
+            <label for="url">URL:</label>
+            <input type="url" name="url" id="url"><br><br>
+
+            <label for="search">Search:</label>
+            <input type="search" name="search" id="search"><br><br>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferences:</legend>
+            <label for="color">Favourite Color</label>
+            <input type="color" name="color" id="color"><br><br>
+
+            <label for="range">Satisfaction level</label>
+            <input type="range" name="range" id="range" min="1" max="10"><br><br>
+
+            <label for="gender">Gender:</label><br>
+            <input type="radio" name="gender" id="male">
+            <label for="male">Male</label><br>
+
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female</label><br><br>
+
+            <label for="interest"> Interests:</label><br>
+            <input type="checkbox" name="interest" id="coding" value="coding">
+            <label for="coding">Coding</label><br>
+
+            <input type="checkbox" name="interest" id="develop" value="developer">
+            <label for="develop">Developer</label><br>
+
+            <input type="checkbox" name="interest" id="sports" value="sports">
+            <label for="sports">Sports</label><br><br>
+
+            <label for="country">Country:</label>
+            <select name="country" id="country"><br>
+            <option value="USA">USA</option>
+            <option value="inida">India</option>
+            <option value="UK">UK</option>
+        </select><br><br>
+
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" rows="5"></textarea><br><br>
+        
+        </fieldset><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,17 @@
+.first{
+    border: 2px solid black;
+    background-color:darkviolet !important;
+    padding: 40px;
+    border-radius: 50px;
+}
+.second{
+    background-color:burlywood !important;
+    padding: 40px;
+    border-radius: 50px;
+}
+
+p{
+    background-color:darkorange !important;
+    padding: 40px;
+    border-radius: 50px;
+}

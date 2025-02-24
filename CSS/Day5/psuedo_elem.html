@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+    <style>
+        ::selection {
+            background-color: antiquewhite;
+        }
+
+        .atag {
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .atag::after {
+            content: "h";
+        }
+
+        .atag::before {
+            content: "h";
+        }
+
+        .fir::first-letter {
+            font-size: 100px;
+        }
+
+        .sec::first-line {
+            color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <a href="" class="atag">Home</a>
+            <a href="" class="atag">About</a>
+            <a href="" class="atag">Contact</a>
+            <a href="" class="atag">Login</a>
+        </div>
+        <p class="fir">Bestie</p>
+        <p class="sec">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque atque laboriosam corrupti
+            doloribus labore? Reiciendis nesciunt veniam et laborum! Autem tenetur vero laborum illum eligendi officia,
+            veniam dolorum obcaecati ipsam!</p>
+    </div>
+
+</body>
+
+</html>

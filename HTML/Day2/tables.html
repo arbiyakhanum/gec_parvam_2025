@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid blue;
+            /* border-collapse: collapse; */
+        }
+        th,td{
+         padding: 50%;
+        }
+        table{
+         border-spacing: 50px;   
+        }
+    </style>
+</head>
+
+<body>
+    <!-- tables in html -->
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Roll No</th>
+            <th>Age</th>
+        </tr>
+
+        <tr>
+            <td>Arbiya</td>
+            <td>003</td>
+            <td>22</td>
+        </tr>
+    </table>
+    <br>
+    <!-- vertical tables -->
+    <table>
+        <tr>
+            <th>Name</th>
+            <td>Arbiya</td>
+
+        </tr>
+
+        <tr>
+            <th>Roll no</th>
+            <td>003</td>
+
+        </tr>
+
+        <tr>
+            <th>Age</th>
+            <td>21</td>
+
+        </tr>
+    </table>
+<br>
+    <table border="1">
+        <thead>
+            <th>MON</th>
+            <th>TUE</th>
+            <th>WED</th>
+            <th>THURS</th>
+            <th>FRI</th>
+            <th>SAT</th>
+            <th>SUN</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td colspan="2">2</td>
+                <!-- <td>3</td> -->
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>9</td>
+                <td rowspan="2">10</td>
+                <td  style="color: brown;">11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>16</td>
+                <td>18</td>
+                
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+            </tr>
+            <tr>
+                <td>29</td>
+                <td>30</td>
+
+            </tr>
+        </tbody>
+
+    </table>
+</body>
+
+</html>

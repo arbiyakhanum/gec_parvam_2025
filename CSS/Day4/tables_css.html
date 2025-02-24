@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables in css</title>
+    <style>
+        body{
+            padding: 20px;
+        }
+        .table_con{
+            width:80vw;
+            height: 50vh;
+        }
+
+        .table_con,th,td{
+            border:1px solid rgb(101, 8, 233);
+            border-collapse: collapse;
+        }
+
+        th{
+            color:orange;
+        }
+
+        td{
+            color:chartreuse;
+        }
+
+        tr:nth-child(2n){
+            background-color: rgb(203, 204, 134);
+       }
+
+        tr:nth-child(2n+1){
+            background-color: rgb(162, 192, 105);
+        }
+
+        tr:first-child{
+            background-color: rgba(141, 203, 184, 0.779);
+            color: rgb(107, 103, 125);
+        }
+
+        th,td{
+            padding:20px;
+            text-align:start;
+            vertical-align:top;
+        }
+
+
+    </style>
+</head>
+<body>
+    <table class="table_con">
+        <tr>
+            <th>Name</th>
+            <th>Roll No</th>
+            <th>Age</th>
+            <th>Addres</th>
+        </tr>
+        <tr>
+            <td>Suchi</td>
+            <td>405</td>
+            <td>23</td>
+            <td>Hassan</td>
+        </tr>
+
+        <tr>
+            <td>Suchi</td>
+            <td>405</td>
+            <td>23</td>
+            <td>Hassan</td>
+        </tr>
+
+        <tr>
+            <td>Suchi</td>
+            <td>405</td>
+            <td>23</td>
+            <td>Hassan</td>
+        </tr>
+
+        <tr>
+            <td>Suchi</td>
+            <td>405</td>
+            <td>23</td>
+            <td>Hassan</td>
+        </tr>
+    </table>
+</body>
+</html>

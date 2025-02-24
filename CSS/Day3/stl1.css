@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.profile {
+    text-align: center;
+    font-size:20px;
+    font-weight: bolder;
+    padding: 20px;
+    background: linear-gradient(to right, #663996, #7a9dda);
+    color:bisque;
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    background:black;
+    padding: 15px 0;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 0 15px;
+    transition: 1s;
+}
+
+.nav a:hover {
+    color:cyan;
+    text-decoration: underline;
+}
+
+
+#home {
+    text-align:left;
+    padding: 50px 20px;
+    background: white;
+}
+
+#home h1 {
+    font-size: 2.5rem;
+}
+
+#home h2 {
+    font-size: 2rem;
+    color: #6a11cb;
+}
+
+#home p {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+#about {
+    text-align: center;
+    padding: 50px 20px;
+    background: #b8dceb;
+}
+
+.image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    margin: 20px 0;
+}
+
+
+#projects {
+    text-align:left;
+    padding: 50px 20px;
+    background:#d9e6ec;
+}
+
+.projectwork1, .projectwork2 {
+    background:rgb(154, 249, 217);
+    color:rgb(160, 49, 154);
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+}
+
+.projectwork1 a, .projectwork2 a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #16144f;
+    text-decoration: none;
+}
+
+.projectwork1 a:hover, .projectwork2 a:hover {
+    text-decoration: underline;
+    color: rgb(203, 175, 73);
+}
+
+
+.contact {
+    text-align:left;
+    padding: 50px 20px;
+    background:azure;
+}
+
+.contact a {
+    color: #6a11cb;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+    background: rgb(23, 232, 124);
+}
+
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #9b9898;
+    color: rgb(59, 34, 158);
+    font-size: 1rem;
+}
