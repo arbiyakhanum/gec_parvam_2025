@@ -5,12 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS</title>
+    <!-- <script>
+        function handleclick() {
+            document.getElementById('demo').innerText = 'HEllo Internal JS';
+
+        }
+    </script> -->
+    <script src="./intro.js" defer></script>
 </head>
 
 <body>
 
     <p id="demo">Hello Habiba</p>
     <button type="button" onclick="document.getElementById('demo').innerText='Hello Bushra'">Click Here</button>
+    <button type="button" onclick="handleclick()">Internal JS</button>
+    <button type="button" onclick="handleExternalClick()">External JS</button>
+    <script>
+        function handleclick() {
+            document.getElementById('demo').innerText = 'HEllo Internal JS';
+
+        }
+    </script>
 
 </body>
 
