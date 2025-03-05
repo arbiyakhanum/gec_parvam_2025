@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+
+
+<body>
+    <h1>3 ways to declare a function</h1>
+    <p>1. function declaration</p>
+    <p>2. funcion expression</p>
+    <p>arrow function</p>
+
+    <p>syntax:
+    <pre>function function_name(){
+            //code
+            }
+        </pre>
+    call a function:
+    function_name()
+
+
+    <h1>Function are used for reusability of a code.... in javascript DRY(dont repeat yourself)</h1>
+    </p>
+
+    <h2>4 Types of functions</h2>
+    <p>1. function acceptiong a parameter and not returning a value</p>
+    <p>2. function acceptiong a parameter and returning a value</p>
+    <p>3. function not acceptiong a parameter and not returning a value</p>
+    <p>4. function not acceptiong a parameter and returning a value</p>
+
+    <script>
+        //function declaration
+        function display() {
+            console.log("This is a function");
+
+        }
+        //function call
+        display();
+
+        //1.
+        function para_not_return(number) {
+            console.log(`The given number is ${number}`);
+        }
+        para_not_return(90);
+
+        //2
+        function para_return(number) {
+            return number;
+        }
+        const res = para_return(335);
+        console.log(`The result is ${res}`);
+
+        //3
+        function not_para_not_return() {
+            console.log("This is 3rd type");
+        }
+        not_para_not_return()
+
+        //4
+        function not_para_return() {
+            console.log("This is 4th type");
+            return 80;
+        }
+        const res1 = not_para_return();
+        console.log(`The result is ${res1}`);
+
+        //Even or odd
+        // function even(num) {
+        //     if (num % 2 == 0) {
+        //         console.log(`${num} is even`);
+        //     } else {
+        //         console.log(`${num} is odd`);
+        //     }
+        // }
+
+        // even(20);
+
+        //function declaration
+        function iseven(number) {
+            return number % 2 === 0;
+        }
+        const res5 = iseven(36);
+        if (res5 === true) {
+            console.log("It is even");
+        } else {
+            console.log("It is odd");
+        }
+    </script>
+    <script>
+        //function expression
+        const display1 = function () {
+            console.log("This is display function expression");
+        }
+        display1();
+    </script>
+    <Script>
+        const display2 = () => {
+            console.log("This is display arrow function");
+        }
+        display2();
+    </Script>
+
+
+
+</body>
+
+</html>

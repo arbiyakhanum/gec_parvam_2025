@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2-Player Racing Game 🚗💨</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .track {
+            width: 90%;
+            height: 60px;
+            background: lightgray;
+            margin: 20px auto;
+            position: relative;
+            border-radius: 25px;
+            border: 3px solid black;
+            overflow: hidden;
+        }
+
+        .car {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 5px;
+            left: 0;
+            transition: left 0.1s;
+        }
+
+        .winner {
+            font-size: 2em;
+            color: green;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>🏁 2-Player Racing Game 🚗</h1>
+    <p><strong>Player 1 (🚗 Red) → Press "A" | Player 2 (🚙 Blue) → Press "L"</strong></p>
+    <p>First to reach the finish line wins!</p>
+
+    <div class="track">
+        <img src="https://img.icons8.com/color/48/000000/suv.png" class="car" id="car1">
+    </div>
+    <div class="track">
+        <img src="https://img.icons8.com/color/48/000000/suv.png" class="car" id="car2">
+    </div>
+
+    <div id="winner" class="winner"></div>
+    <button onclick="resetGame()">Restart Game</button>
+
+    <script>
+        let car1 = document.getElementById("car1");
+        let car2 = document.getElementById("car2");
+        let car1Position = 0;
+        let car2Position = 0;
+        let finishLine = window.innerWidth - 100;
+
+        document.addEventListener("keydown", moveCar);
+
+        function moveCar(event) {
+            if (event.key === "a" || event.key === "A") {
+                car1Position += 30;
+                car1.style.left = car1Position + "px";
+            }
+            if (event.key === "l" || event.key === "L") {
+                car2Position += 30;
+                car2.style.left = car2Position + "px";
+            }
+            checkWinner();
+        }
+
+        function checkWinner() {
+            if (car1Position >= finishLine) {
+                document.getElementById("winner").innerText = "🚗 Player 1 Wins!";
+                stopGame();
+            } else if (car2Position >= finishLine) {
+                document.getElementById("winner").innerText = "🚙 Player 2 Wins!";
+                stopGame();
+            }
+        }
+
+        function stopGame() {
+            document.removeEventListener("keydown", moveCar);
+        }
+
+        function resetGame() {
+            car1Position = 0;
+            car2Position = 0;
+            car1.style.left = "0px";
+            car2.style.left = "0px";
+            document.getElementById("winner").innerText = "";
+            document.addEventListener("keydown", moveCar);
+        }
+    </script>
+
+</body>
+
+</html>

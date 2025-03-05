@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Looping Statements</h1>
+    <p>1. for</p>
+    <p>2. while loop</p>
+    <p>3. do while</p>
+    <p>4. for in</p>
+    <p>5. for off</p>
+
+    <script>
+        let array1 = ["item1", "item2", "item3", "item4"];
+        // let len = array1.length;
+        console.log(array1.length);
+        for (let i = 0; i < 4; i++) {
+            console.log(array1[i]);
+        }
+
+        console.log("While loop");
+        let j = 0;
+        while (j < array1.length) {
+            console.log(array1[j]);
+            j++;
+        }
+        // console.log("While taking input from user");
+        // let m = Number(prompt('Enter the Number'));
+        // let c = 100;
+        // while (m <= c) {
+        //     console.log(m);
+        //     m++;
+        // }
+
+
+        console.log("Do while loop");
+        let r = 0
+        do {
+            console.log(array1[r]);
+            r++;
+        } while (r < array1.length)
+
+
+        // console.log("Do while user input");
+        // do {
+        //     const n = Number(prompt("Enter a number"));
+        //     if (n === 20) {
+        //         break;
+        //     }
+        // } while (true)
+
+        console.log("for of loop");
+        let new_array = [1, 2, 3, 4, 5];
+        for (let item of new_array) {
+            console.log(item);
+        }
+
+        console.log("for in loop");
+        let new_array1 = [1, 2, 3, 4, 5];
+        for (let item in new_array1) {
+            console.log(item);
+        }
+
+
+    </script>
+</body>
+
+</html>

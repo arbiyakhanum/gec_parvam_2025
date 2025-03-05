@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>operators</title>
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 1.8rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Operators in JS</h1>
+    <dl>
+        <dt>1. Arthematic </dt>
+        <dd> +,-,*,/%,**</dd>
+    </dl>
+    <dl>
+        <dt>2. Assignment </dt>
+        <dd> =,+=,-=,%=,*=,**=</dd>
+    </dl>
+    <dl>
+        <dt>3. Comparison </dt>
+        <!-- <dd> ==, ===, !=,!==,'<','>','<=','>='
+        </dd> -->
+    </dl>
+    <dl>
+        <dt>4. Bitwise </dt>
+        <dd> &, | ,~,^</dd>
+    </dl>
+    <dl>
+        <dt>5. Logical</dt>
+        <dd> &&, ||, !</dd>
+    </dl>
+    <dl>
+        <dt>6. Ternary </dt>
+        <dd> ?,:</dd>
+    </dl>
+    <script>
+        // <h1>Assignment Operator</h1>
+        var a = 9, b = 3;
+        console.log(a + b);
+        console.log(a - b);
+        console.log(a * b);
+        console.log(a / b);
+        console.log(a % b);
+        console.log(a ** b);
+
+
+        // assignment operators
+
+        var c = 5;
+        c += 3;
+        c -= 3;
+        c *= 3;
+        c /= 3;
+        c %= 3;
+        c **= 3;
+
+        console.log(c)
+
+        // Comparison operator
+
+        console.log(10 > 5);
+        console.log(10 < 5);
+        console.log(10 >= 5);
+        console.log(10 <= 5);
+        // compares the value
+        console.log("==:", 10 == "10");
+        // compares the datatype
+        console.log("===:", 10 === "10");
+        // compares the value
+        console.log("!=:", 10 != "10")
+        // compares the datatype   m
+        console.log("!==:", 10 !== "10")
+
+        // bitwise operator
+        console.log(5 & 1)
+        console.log(5 | 1)
+        console.log(~5)
+        console.log(5 ^ 1);
+
+        // logical operator
+
+        console.log(true && false)
+        let m = 3, d = 6, e = 3, f = 7;
+        console.log((m < d) && (f > e));
+        console.log(true || false)
+        console.log(!true)
+
+        // ternary operator 
+        let age = 16;
+        let canVote = (age >= 18) ? "Yes , you can vote" : "No, you can't vote";
+        console.log(canVote);
+
+        console.log("? : -", (6 < 3) ? "yes it is" : "No its not");
+
+    </script>
+
+
+</body>
+
+</html>
