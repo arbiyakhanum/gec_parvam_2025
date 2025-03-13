@@ -1,0 +1,139 @@
+1_Event
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+
+<body>
+    <h1>Events in JS</h1>
+    <p>Mouse</p>
+    <p>Keyboard</p>
+    <p>Form</p>
+    <p>Window</p>
+    <p>Document</p>
+    <p>Clipboard</p>
+    <p>Media</p>
+
+    <!-- 1 -->
+    <h2>1. Mouse Events</h2>
+    <h3 id="htag">Hello</h3>
+    <!-- <button onclick="handleclick()">Change the text</button> -->
+    <button id="btn">Change the text</button>
+
+    <script>
+
+        //1. Mouse Events
+        //using html(onclick in the html tag)
+        console.log("Mouse Events");
+        // const handleclick = () => {
+        //     const htag = document.querySelector("#htag")
+        //     htag.textContent = "Hello JS"
+        // }
+
+        //addEventListener-- changing text using javascript only
+        const btn = document.querySelector("#btn");
+        const htag = document.querySelector("#htag");
+        btn.addEventListener("click", () => {
+            htag.textContent = "HEllo JS"
+        })
+    </script>
+
+    <!-- 2 -->
+    <h2>2. Keyboard Events</h2>
+    <input type="text" id="inputField" placeholder="Type something">
+    <p id="keyMsg"></p>
+
+    <script>
+
+        // 2.keyboard Events - Trigerred when the user presss or releases a key.
+        // Example:Keypress event
+
+        document.getElementById("inputField").addEventListener("keypress", function (event) {
+            document.getElementById("keyMsg").innerText = "You pressed:" + event.key;
+
+        });
+    </script>
+
+
+
+    <!-- 3 -->
+    <h2>3.Form events</h2>
+
+    <!-- input  -->
+    <h5>Input:</h5>
+    <input type="text" id="username">
+    <p id="result">arbiya</p>
+
+    <!-- change -->
+    <h5>Change:</h5>
+    <select id="dropdown">
+        <option value="apple">Apple</option>
+        <option value="banana">Banana</option>
+    </select>
+    <p id="fruitMsg"></p>
+
+    <!-- focus  -->
+
+
+    <!-- submit  -->
+    <h5>Submit:</h5>
+    <form id="contactForm">
+        <input type="text" name="name" id="name" placeholder="name"><br><br>
+        <input type="email" name="email" id="email" placeholder="Email"><br><br>
+        <textarea name="textarea" id="textarea" placeholder="Enter text" cols="50" rows="5"></textarea><br>
+        <button type="submit">Submit</button>
+    </form>
+
+
+
+    <script>
+        //3. Form Events - these events are triggeres when interating with form elements
+
+        //input
+        const username = document.querySelector("#username");
+        const result = document.querySelector("#result");
+        username.addEventListener("input", () => {
+            result.innerText = username.value;
+        })
+
+        //Change
+        document.getElementById("dropdown").addEventListener("change", function () {
+            document.getElementById("fruitMsg").innerText = "Selected: " + this.value;
+        });
+
+        //Focus
+        username.addEventListener("focus", () => {
+            console.log("Hello World");
+        })
+
+        //blur
+        const username1 = document.querySelector("#username");
+        const result1 = document.querySelector("#result");
+        username.addEventListener("blur", () => {
+            result1.innerText = username1.value;
+            console.log("its blur");
+        })
+
+
+        //submit
+        const contactForm = document.querySelector("#contactForm");
+        contactForm.addEventListener("submit", (event) => {
+            event.preventDefault();
+            console.log("hello submit");
+        })
+
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>

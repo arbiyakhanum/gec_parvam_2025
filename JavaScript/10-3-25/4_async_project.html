@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .container {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+
+</body>
+<div class="container">
+    <h1>Async JS project</h1>
+    <button type="button" id="date_time">DateTime</button>
+    <button type="button" id="btn">Stop</button>
+
+</div>
+<script>
+    const container = document.getElementById("container");
+    const id = setInterval(() => {
+        const red = Math.floor(Math.random() * 256);
+        const green = Math.floor(Math.random() * 256);
+        const blue = Math.floor(Math.random() * 256);
+        const res = `rgb(${red} ${green} ${blue})`
+        document.body.style.background = res;
+    }, 1000);
+
+    document.addEventListener("DOMContentLoaded", () => {
+        document.getElementById("btn").addEventListener('click', (e) => {
+            clearInterval(id);
+            e.target.textContent = document.body.style.background;
+        })
+    })
+
+    setInterval(() => {
+        const date = new Date();
+        console.log(date.toLocaleString());
+        console.log(date.toDateString());
+        console.log(date.toTimeString());
+        console.log(date.toLocaleTimeString());
+        document.querySelector("#date_time").innerText = date;
+    }, 1000)
+
+</script>
+
+</html>

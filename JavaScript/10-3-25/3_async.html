@@ -1,0 +1,27 @@
+3_asyn
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Async JS</h1>
+    <script>
+        console.log("Hello");
+        setTimeout(() => {
+            console.log("Hello1"); //executes only once
+        }, 3000);
+        setInterval(() => {
+            console.log("Hello2"); //execute in loop at the given time interval
+        }, 1000);
+        console.log("Hello3");
+
+    </script>
+
+</body>
+
+</html>

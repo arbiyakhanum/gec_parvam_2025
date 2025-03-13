@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array methods</title>
+</head>
+
+<body>
+    <h1>Array methods</h1>
+    <p>1.foreach</p>
+    <p>2.map</p>
+    <p>3. filter</p>
+    <p>4. reduce</p>
+    <p>5. sort</p>
+    <p>6. splice(start,delete,insert)</p>
+    <p>7.each</p>
+    <p>8.some</p>
+
+    <script>
+        //1.foreach
+        console.log("1. For each loop");
+        const array1 = [1, 2, 3, 4, 5, 6, 7];
+        array1.forEach((curEle, index, array) => {
+            console.log(curEle * curEle, "index is:", index, "whole array is", array);
+        })
+
+        //real-time example 
+        const users = [
+            { firstname: 'Arbiya', age: 23, address: "bengaluru" },
+            { firstname: 'Arbiya1', age: 23, address: "bengaluru" },
+            { firstname: 'Arbiya2', age: 23, address: "bengaluru" },
+        ]
+
+        users.forEach((curEle) => {
+            console.log(curEle.firstname);
+        })
+        console.log("-----------------------------------------");
+
+        //2.map
+        console.log('2.Map');
+        const array2 = [3, 4, 5, 6, 7];
+        const array3 = array2.map((curEle, index, array) => {
+            return curEle * curEle;
+        })
+        console.log("array2:", array2);
+        console.log("array3:", array3);
+
+        const users1 = [
+            { firstname: 'Arbiya', age: 23, address: "bengaluru" },
+            { firstname: 'Arbiya1', age: 22, address: "bengaluru" },
+            { firstname: 'Arbiya2', age: 21, address: "bengaluru" },
+
+        ]
+        const users2 = users1.map((curEle) => {
+            return curEle.firstname;
+        })
+        console.log(users2);
+        console.log("-----------------------------------------");
+
+        //3.filter
+        console.log('3.Filter');
+        const array4 = [1, 2, 3, 4, 5, 6, 7, 8, 9]; // will filter the even number bcuz of the condition becomes true
+        const array5 = array4.filter((curEle) => {
+            return curEle % 2 == 0;
+        })
+        console.log("Array5:", array5);
+        console.log("-----------------------------------------");
+
+        //4.reduce - reduce to a single value:
+        //how it works: it has 3 keywords previous current return (return = previous + current)
+        //previous | current |  return
+        //  1      |    2    |      3
+        //  3      |    3    |      6
+        //  6      |    4    |      10
+        // 10      |    5    |      15
+        // 15      |    6    |      21 -->it will display 21
+
+        console.log('4.Reduce');
+        const array6 = [1, 2, 3, 4, 5, 6];
+        const res = array6.reduce((previous, current) => {
+            return previous + current;
+        }, 10) // if we dont write 10 here it will display the final value 21, here we have written 10 so it will add 10 also and give the output as 31
+        console.log("The result is:", res);
+        console.log("-----------------------------------------");
+
+        //5.sort
+        console.log('5.Sort');
+        const array7 = [5, 2, 9, 1, 5, 6];
+        array7.sort(); // Ascending order
+        console.log("Sorted array in ascending order:", array7);
+
+        array7.sort((a, b) => b - a); // Descending order
+        console.log("Sorted array in descending order:", array7);
+        console.log("-----------------------------------------");
+
+        //6.splice
+        console.log('6.Splice');
+        const array8 = [1, 2, 3, 4, 5, 6, 7];
+        array8.splice(2, 2, 99, 100); // Removes 2 elements from index 2 and inserts 99 and 100
+        console.log("Array after splice:", array8);
+        console.log("-----------------------------------------");
+
+        //7.some (Checking if at least one element meets a condition)
+        console.log('7.Some');
+        const array9 = [1, 3, 5, 7, 9];
+        const hasEvenNumber = array9.some((curEle) => curEle % 2 === 0);
+        console.log("Does the array contain an even number?", hasEvenNumber);
+        console.log("-----------------------------------------");
+
+        //8. every (Checking if all elements meet a condition)
+        console.log('8.Every');
+        const array10 = [2, 4, 6, 8, 10];
+        const allEven = array10.every((curEle) => curEle % 2 === 0);
+        console.log("Are all elements even?", allEven);
+        console.log("-----------------------------------------");
+
+
+    </script>
+</body>
+
+</html>

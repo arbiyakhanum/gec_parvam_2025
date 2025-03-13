@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+
+<body>
+    <h1>Objects</h1>
+    <p>Object is a collection of properties and methods</p>
+    <p>Object is a key value pair</p>
+    <p>Function inside the class is callled method, function outside the class is called function</p>
+    <script>
+        const car_obj = {
+            carName: "Tesla",
+            type: "Ev",
+            wheels: 4,
+            "four Seat": true,
+            speed: function () {
+                console.log("Tesla is moving by 60km/hr");
+            }
+        }
+        console.log(car_obj);
+        console.log(car_obj.carName);
+        console.log(car_obj.wheels);
+        console.log(car_obj["four Seat"]);
+        car_obj.speed();
+
+        //adding item to an object
+        car_obj.color = "red";
+        console.log("Car object:", car_obj);
+
+        const new_obj = { ...car_obj };
+        console.log(new_obj);
+
+        //deleting item from object
+        delete car_obj.color
+        console.log("After  Car object:", car_obj);
+
+    </script>
+
+</body>
+
+</html>

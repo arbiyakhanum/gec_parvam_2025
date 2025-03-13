@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>This Keyword</h1>
+    <h4>When we print this keyword it will give a window object</h4>
+    <p>This keyword will points to the current object</p>
+    <p>When it is used within an arrow function it will print one level higher than the normal function(it will print
+        window only)</p>
+    <p>When it is used within a function expression it will print the current object</p>
+
+    <script>
+        // console.log(this);
+
+        //we can write the this keyword using all 3 types of functions
+
+
+        console.log("Function expression:");
+        const obj1 = {
+            firstname: "Arbiya",
+            lastname: "Khanum",
+            age: 22,
+            about: function () { //it will print the current object obj1
+                console.log(this);
+                // console.log(this.firstname + ' ' + this.lastname); //this will print only the full name
+            }
+        }
+        obj1.about();
+
+        console.log("Arrow Function :");
+        const obj2 = {
+            firstname: "habiba",
+            lastname: "bushra",
+            age: 22,
+            about1: () => { //it will print the window object
+                console.log(this);
+            }
+        }
+        obj2.about1();
+
+    </script>
+
+</body>
+
+</html>

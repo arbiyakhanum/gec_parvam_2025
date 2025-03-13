@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>optional Chaining</title>
+</head>
+
+<body>
+    <h1>Optional Chaining</h1>
+    <h2>sytax: ?.</h2>
+    <script>
+        const obj1 = {
+            name: "arbiya",
+            age: 22,
+            address: {
+                country: "India",
+                state: "karnataka",
+                city: "hassan"
+            }
+
+        }
+        console.log(obj1);
+        console.log(obj1.address1.country); //for this when we dont use optional chaining the address1 is not present in the object so it will show the error for that one
+        console.log(obj1?.address?.country);//but we use optional chaining it will not show error instead it will show undefined..
+    </script>
+
+</body>
+
+</html>

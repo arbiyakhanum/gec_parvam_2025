@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Destructing</title>
+</head>
+
+<body>
+    <h1>Array Destructing</h1>
+    <h2>Rest</h2>
+    <p> when we assign the variables to each item of an array ,it is difficult to assign each item one by one so we use
+        (...rest) to print the remaining item of an array,see the example below in array2</p>
+    <p>when we want to leave the middle item we just use (var1, , var2), it will print the 1st and 3rd item...similarly
+        (var1, var2, ,) it will print the 1st and 2nd item and will not print the third item(see example below array3)
+    </p>
+
+    <script>
+
+
+        let array1 = ["item1", "item2", "item3", "item4"];
+        console.log(array1);
+        let var1 = array1[0];
+        let var2 = array1[1];
+        let var3 = array1[2];
+        let var4 = array1[3];
+        console.log(var1, var2, var3, var4);
+
+        console.log("-------------------------------------------");
+        //array destructure usinf the spread  parameter (...rest)
+        let array2 = ["item1", "item2", "item3", "item4", "item5", "item6", "item7", "item8"];
+        const [var5, var6, ...rest] = array2;
+        console.log("array:", var5, var6);
+        console.log("Rest:", rest);
+
+        console.log("-------------------------------------------");
+
+        let array3 = ["item1", "item2", "item3", "item4"];
+        const [var7, , var9,] = array2;
+        console.log("Last:", var7, var9);
+
+
+        console.log("-------------------------------------------");
+
+        const users = [
+            { firstname: 'Arbiya', age: 23, address: "bengaluru" },
+            { firstname: 'Arbiya1', age: 22, address: "bengaluru" },
+            { firstname: 'Arbiya2', age: 21, address: "bengaluru" },
+        ]
+        const [user1, user2, user3] = users; //assigning variables to each item in an array
+        console.log(user1);
+        console.log(user2);
+        console.log(user3);
+
+        //the above array contains all the objects ,if we want to destructure the particular content within an array use the following
+        const [{ firstname, age }, u2, u3] = users;
+        console.log(firstname, age);
+        console.log(u2);
+        console.log(u3);
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

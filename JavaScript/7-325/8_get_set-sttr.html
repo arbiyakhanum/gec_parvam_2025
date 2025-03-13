@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get and Set</title>
+</head>
+
+<body>
+
+    <h1>Get and Set attribute</h1>
+    <p>1. getattribute()</p>
+    <p>2. setattribute()</p>
+
+    <a href="./4_how_many_ways.html" class="atag" id="atag">How many ways</a>
+    <button onclick="handleChange()"> Change</button>
+    <script>
+        const atag = document.querySelector("#atag");
+        console.log(atag.getAttribute("href")); //getattribute is used to get particular file linked using the href
+
+        const handleChange = () => {
+            atag.setAttribute("href", "./1_optional_chaining.html") //setattribute is used to change the existing content or file
+            atag.innerHTML = "Optional Chaining"
+        }
+    </script>
+</body>
+
+</html>

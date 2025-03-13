@@ -17,7 +17,7 @@
     <h1>Operators in JS</h1>
     <dl>
         <dt>1. Arthematic </dt>
-        <dd> +,-,*,/%,**</dd>
+        <dd> +,-,*,/,%,**</dd>
     </dl>
     <dl>
         <dt>2. Assignment </dt>
@@ -41,7 +41,7 @@
         <dd> ?,:</dd>
     </dl>
     <script>
-        // <h1>Assignment Operator</h1>
+        // <h1>arithmatic Operator</h1>
         var a = 9, b = 3;
         console.log(a + b);
         console.log(a - b);
@@ -51,7 +51,7 @@
         console.log(a ** b);
 
 
-        // assignment operators
+        console.log("assignment operators");
 
         var c = 5;
         c += 3;
@@ -64,35 +64,34 @@
         console.log(c)
 
         // Comparison operator
-
+        console.log("comparison operator");
         console.log(10 > 5);
         console.log(10 < 5);
         console.log(10 >= 5);
         console.log(10 <= 5);
-        // compares the value
+        console.log("compares the value");
         console.log("==:", 10 == "10");
         // compares the datatype
         console.log("===:", 10 === "10");
         // compares the value
         console.log("!=:", 10 != "10")
-        // compares the datatype   m
+        // compares the datatype   
         console.log("!==:", 10 !== "10")
 
-        // bitwise operator
+        console.log("bitwise operator");
         console.log(5 & 1)
         console.log(5 | 1)
         console.log(~5)
         console.log(5 ^ 1);
 
-        // logical operator
-
+        console.log("logical operator");
         console.log(true && false)
         let m = 3, d = 6, e = 3, f = 7;
         console.log((m < d) && (f > e));
         console.log(true || false)
         console.log(!true)
 
-        // ternary operator 
+        console.log("ternary operator");
         let age = 16;
         let canVote = (age >= 18) ? "Yes , you can vote" : "No, you can't vote";
         console.log(canVote);

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h1>Arrow Functions</h1> -->
+    <!-- <script>
+        const iseven = (num) => //for a single line inside the function body,{} is not required
+            num % 2 == 0;
+
+        const res = iseven(8);
+        console.log(`result is: ${res}`);
+    </script> -->
+
+    <h1> Table</h1>
+    <table>
+        <thead>
+            <tr>
+                <td>Name</td>
+                <td>Age</td>
+                <td>Address</td>
+            </tr>
+        </thead>
+        <tbody id="table_body">
+
+        </tbody>
+    </table>
+    <script>
+        const users = [
+            { firstname: 'Arbiya', age: 23, address: "bengaluru" },
+            { firstname: 'Arbiya1', age: 23, address: "bengaluru" },
+            { firstname: 'Arbiya2', age: 23, address: "bengaluru" },
+            { firstname: 'Arbiya3', age: 23, address: "bengaluru" },
+            { firstname: 'Arbiya4', age: 23, address: "bengaluru" },
+            { firstname: 'Arbiya5', age: 23, address: "bengaluru" },
+        ]
+
+        let content = ""
+        for (let item of users) {
+            content += `<tr>
+                <td>${item.firstname}</td>
+                <td>${item.age}</td>
+                <td>${item.address}</td>
+                </tr>`
+        }
+        console.log(content);
+        document.getElementById('table_body').innerHTML = content
+    </script>
+</body>
+
+</html>

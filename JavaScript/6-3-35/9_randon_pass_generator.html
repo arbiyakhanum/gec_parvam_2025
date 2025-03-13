@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate a random password</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 300px;
+        }
+
+        h1 {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .display input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Generate a random password</h1>
+        <div class="display">
+            <input type="text" name="password" id="password">
+
+        </div>
+        <button type="button" id="gen_button" onclick="handleclick()">Generate Button</button>
+        <button type="button" id="cpy_button" onclick="handlecopy()">Copy Button</button>
+
+    </div>
+    <script>
+        const length = 12;
+        const uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        const lowercase = "abcdefghijklmnopqrstuvwxyz";
+        const number = "0123456789";
+        const special_char = "!@#$%^&*_+-="
+        const all_char = uppercase + lowercase + number + special_char;
+        const handleclick = () => {
+            let password = "";
+            password += uppercase[Math.floor(Math.random() * uppercase.length)]
+            password += lowercase[Math.floor(Math.random() * lowercase.length)]
+            password += number[Math.floor(Math.random() * number.length)]
+            password += special_char[Math.floor(Math.random() * special_char.length)]
+
+            while (length > password.length) {
+                password += all_char[Math.floor(Math.random() * all_char.length)]
+            }
+            document.getElementById("password").value = password
+            console.log(password);
+
+        }
+        const handlecopy = () => {
+            const password = document.getElementById("password");
+            password.select();
+            document.execCommand("copy");
+        }
+
+    </script>
+
+</body>
+
+</html>

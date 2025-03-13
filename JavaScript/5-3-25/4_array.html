@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+
+<body>
+    <h1>Array in JS</h1>
+    <h2>Operations</h2>
+    <p>1. Push</p>
+    <p>2. Pop</p>
+    <p>3. Unshift</p>
+    <p>4. Shift</p>
+
+    <script>
+        console.log("Original array");
+        let a1 = [1, 2, 3, 4, 5, 6]
+        console.log(a1);
+        console.log(a1[3]);
+
+        //push(push the item at the end of an array)
+        a1.push(45);
+        console.log("After pushing", a1);
+        //pop(pop the item from the end of an array)
+        const res = a1.pop();
+        console.log("After popping:", a1);
+        console.log("The popped element is:", res);
+
+        a1.pop();
+        console.log("After popping another item:", a1);
+
+        //unshift (push the item at the beggining of an array)
+
+        let a2 = [1, 2, 3, 4, 5, 6, 7, 8];
+        a2.unshift(21);
+        console.log("After unshift:", a2);
+        console.log("First index of a2 after shifting:", a2[0]);
+
+        //shift (pop the item from the beggining of an array)
+        a2.shift();
+        console.log("After shift:", a2);
+
+
+
+    </script>
+
+    <script>
+        let a3 = [12, "hii", true, null, { "name": "Bushra" }];
+
+        console.log(a3);
+        console.log(typeof a3[4]);
+
+        for (let item of a3) {
+            console.log("Type of ", item, "is", typeof item);
+        }
+    </script>
+
+
+
+</body>
+
+</html>

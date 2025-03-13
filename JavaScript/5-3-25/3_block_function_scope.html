@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block and Function scope</title>
+</head>
+
+<body>
+    <h1>Block and function scope</h1>
+    <p>1. Block scope - {} (let and const)</p>
+    <p>2. Function scope - function function_name{} (var)</p>
+
+    <script>
+        function scope() {
+            var num = 10;
+            let num2 = 20;
+            const num3 = 30;
+            if (true) {
+                var num = 100;
+                let num2 = 200;
+                const num3 = 300;
+                console.log("Var the number inside is :" + num);
+                console.log("let the number inside is :" + num2);
+                console.log("const the number inside is :" + num3);
+
+            }
+            console.log("Var the number outside is :" + num);
+            console.log("let the number outside is :" + num2);
+            console.log("const the number outside is :" + num3);
+        }
+        scope();
+    </script>
+
+</body>
+
+</html>

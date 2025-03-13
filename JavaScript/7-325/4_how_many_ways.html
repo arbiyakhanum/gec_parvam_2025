@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ahow many ways</title>
+    <!-- 1. 1st way (it is not recommeded to use because it will first go to the js file load it and after that it will come to html tags)-->
+    <script src="./first.js"></script>
+
+    <!-- 3. 3rd way (it will be laod both the files at a time simultaneously but html will be loaded before the script is being downloaded, but after the script is downloaded,html content is innediately parsed ) -->
+    <script src="./first.js" async></script>
+
+
+    <!-- 4.4th way,  script is being downloaded while the html is being parsed,unlike async it waits until the entire html is parsed before executing -->
+    <script src="./first.js" defer></script>
+
+    <!-- <link rel="stylesheet" href="first.css"> -->
+
+</head>
+
+<body>
+    <h1>How many ways we can use external JS in HTML</h1>
+    <p>1. inside a head</p>
+    <p>2. inside a above closing body</p>
+    <p>3. using async inside the head</p>
+    <p>4. using defer inside the head</p>
+
+
+    <!-- 2. 2nd way -->
+
+</body>
+
+</html>

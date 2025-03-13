@@ -34,6 +34,7 @@
 
     <script>
         //function declaration
+        console.log("Type:1 Function declaration");
         function display() {
             console.log("This is a function");
 
@@ -42,12 +43,14 @@
         display();
 
         //1.
+        console.log("1. function acceptiong a parameter and not returning a value");
         function para_not_return(number) {
             console.log(`The given number is ${number}`);
         }
         para_not_return(90);
 
         //2
+        console.log('2. function acceptiong a parameter and returning a value');
         function para_return(number) {
             return number;
         }
@@ -55,14 +58,15 @@
         console.log(`The result is ${res}`);
 
         //3
+        console.log('3. function not acceptiong a parameter and not returning a value');
         function not_para_not_return() {
             console.log("This is 3rd type");
         }
         not_para_not_return()
 
         //4
+        console.log('4. function not acceptiong a parameter and returning a value');
         function not_para_return() {
-            console.log("This is 4th type");
             return 80;
         }
         const res1 = not_para_return();
@@ -80,6 +84,7 @@
         // even(20);
 
         //function declaration
+        console.log("function declaration,the no is even or odd");
         function iseven(number) {
             return number % 2 === 0;
         }
@@ -89,19 +94,97 @@
         } else {
             console.log("It is odd");
         }
+        console.log('-------------------------------------------------------');
     </script>
+
     <script>
         //function expression
+        console.log('Type 2:Function expression');
         const display1 = function () {
             console.log("This is display function expression");
         }
         display1();
+
+        //4 types of functions using function expression
+
+        // 1
+        console.log("1. function accepting a parameter and not returning a value");
+        const para_not_return1 = function (number) {
+            console.log(`The given number is ${number}`);
+        };
+        para_not_return1(90);
+
+        // 2. 
+        console.log("2. function accepting a parameter and returning a value");
+        const para_return1 = function (number) {
+            return number;
+        };
+        const res6 = para_return1(65);
+        console.log(`The result is ${res6}`);
+
+        //3
+        console.log("3. Functions accepting a parameter and not returning a value");
+        const not_para_not_return1 = function () {
+            console.log('This is 3rd type');
+        }
+        not_para_not_return1();
+
+        //4
+        console.log('4. Functions not accepting a parameter and returning a value');
+        const not_para_return1 = function () {
+            return 827;
+        }
+        const res8 = not_para_return1()
+        console.log(`Result is ${res8}`);
+
+
+        console.log('-------------------------------------------------------');
+
+
+
     </script>
     <Script>
+        console.log('Type 3:Arrow function');
         const display2 = () => {
             console.log("This is display arrow function");
         }
         display2();
+
+
+        //4 types of functions using arrow function 
+
+        // 1
+        console.log("1. function accepting a parameter and not returning a value");
+        const display3 = (number) => {
+            console.log(`The given number is ${number}`);
+
+        }
+        display3(55);
+
+        //2
+        console.log("2. Function accepting a parameter and returning a value");
+        const display4 = (number) => {
+            return number;
+        }
+        const num1 = display4(80);
+        console.log(`The result is ${num1}`);
+
+        //3
+        console.log("3. Function not accepting a parameter and not returning a value");
+        const display5 = () => {
+            console.log("This is 3rd method");
+        }
+        display5();
+
+        //4
+        console.log("4. function not accepting a parameter and returning a value");
+        const display6 = () => {
+            return 20;
+        }
+        const num2 = display6();
+        console.log(`The result is ${num2}`);
+
+
     </Script>
 
 

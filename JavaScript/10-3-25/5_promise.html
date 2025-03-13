@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>promis in js</title>
+</head>
+
+<body>
+    <h1>Promis in js</h1>
+    <p>promis is a future value where it can be resolved to reject.
+    <pre>
+        const var_name= new Promis((resolve,reject)=>{
+            //code
+        })
+    </pre>
+    </p>
+    <script>
+        const items = ["meat", "slat", "rice", "curd"];
+        const result = new Promise((resolve, reject) => {
+            if (items.includes("meat") && items.includes("salt") && items.includes("rice")) {
+                return ("Biryani")
+            } else {
+                reject("cannot make Biryani");
+            }
+        })
+
+        // 1.then and Catch
+        result.then(value => {
+            console.log("With then:", value);
+        }).catch(error => console.log("With then", error));
+
+        //2.using await
+        const biryani = async () => {
+            try {
+                const res = await result;
+                console.log("With await", res);
+            } catch (error) {
+                console.log("With await: ", error);
+            }
+        }
+        biryani()
+
+    </script>
+</body>
+
+</html>
