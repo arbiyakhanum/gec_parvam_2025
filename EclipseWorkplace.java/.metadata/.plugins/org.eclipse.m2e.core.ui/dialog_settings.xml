@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Users\arbiy\Desktop\Parvam\gec_parvam_2025\EclipseWorkplace.java\introduction_to_java"/>
+			<item value="C:\Users\arbiy\Desktop\Parvam\gec_parvam_2025\EclipseWorkplace.java\introduction_to_java\introduction_to_java"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="introduction_to_java"/>
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+</section>

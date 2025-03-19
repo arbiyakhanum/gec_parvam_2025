@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Add Student</title>
+	<style>
+		/* Reset and Base Styles */
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		}
+
+		body {
+			background-color: #f4f6f8;
+			/* Consistent with other pages */
+			min-height: 100vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 40px 20px;
+			color: #333;
+		}
+
+		form {
+			background-color: #ffffff;
+			padding: 40px 50px;
+			border-radius: 8px;
+			box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+			width: 100%;
+			max-width: 500px;
+		}
+
+		h1 {
+			margin-bottom: 30px;
+			font-size: 2rem;
+			color: #2c3e50;
+			/* Same as CRUD page */
+			text-align: center;
+		}
+
+		label {
+			display: block;
+			margin-bottom: 8px;
+			font-weight: 600;
+			color: #34495e;
+			/* Same label color as other forms */
+		}
+
+		input[type="text"],
+		input[type="email"],
+		input[type="number"] {
+			width: 100%;
+			padding: 12px 15px;
+			margin-bottom: 20px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			font-size: 1rem;
+			transition: border-color 0.3s ease, box-shadow 0.3s ease;
+		}
+
+		input[type="text"]:focus,
+		input[type="email"]:focus,
+		input[type="number"]:focus {
+			border-color: #3498db;
+			/* Matches primary button color */
+			box-shadow: 0 0 5px rgba(52, 152, 219, 0.4);
+			outline: none;
+		}
+
+		.form-actions {
+			display: flex;
+			gap: 10px;
+		}
+
+		input[type="submit"],
+		a.cancel-btn {
+			display: inline-block;
+			text-align: center;
+			text-decoration: none;
+			background-color: #3498db;
+			/* Matches CRUD buttons */
+			color: #ffffff;
+			padding: 12px 20px;
+			font-size: 1rem;
+			border-radius: 5px;
+			border: none;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+			flex: 1;
+		}
+
+		input[type="submit"]:hover,
+		a.cancel-btn:hover {
+			background-color: #2980b9;
+			/* Hover effect */
+		}
+
+		a.cancel-btn {
+			background-color: #95a5a6;
+			/* Neutral cancel button */
+		}
+
+		a.cancel-btn:hover {
+			background-color: #7f8c8d;
+		}
+
+		@media (max-width: 600px) {
+			form {
+				padding: 30px 20px;
+			}
+
+			h1 {
+				font-size: 1.5rem;
+			}
+		}
+	</style>
+</head>
+
+<body>
+
+	<form th:action="@{/add-student}" method="post" th:object="${studentDTO}">
+		<h1>Add Student</h1>
+
+		<label for="fname">First Name</label>
+		<input id="fname" type="text" placeholder="Enter your first name" th:field="*{fname}">
+
+		<label for="lname">Last Name</label>
+		<input id="lname" type="text" placeholder="Enter your last name" th:field="*{lname}">
+
+		<label for="email">Email Address</label>
+		<input id="email" type="email" placeholder="Enter your email address" th:field="*{email}">
+
+		<label for="phone">Phone Number</label>
+		<input id="phone" type="number" placeholder="Enter your phone number" th:field="*{phone}">
+
+		<label for="address">Address</label>
+		<input id="address" type="text" placeholder="Enter your address" th:field="*{address}">
+
+		<div class="form-actions">
+			<input type="submit" value="Add Student">
+			<a th:href="@{/students}" class="cancel-btn">Cancel</a>
+		</div>
+	</form>
+
+</body>
+
+</html>
