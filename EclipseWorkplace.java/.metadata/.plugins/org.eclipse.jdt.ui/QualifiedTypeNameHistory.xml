@@ -6,4 +6,6 @@
     <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="oopsInJava.Inheritance.Student1"/>
     <fullyQualifiedTypeName name="oopsInJava.Inheritance.Student"/>
+    <fullyQualifiedTypeName name="oopsInJava.Inheritance.ParentClass2"/>
+    <fullyQualifiedTypeName name="oopsInJava.Inheritance.Interfacenew"/>
 </qualifiedTypeNameHistroy>
