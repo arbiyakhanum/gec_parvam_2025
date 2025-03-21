@@ -15,7 +15,7 @@
         const getUsers = async (url) => {
             const res = await fetch(url);
             const jsonRes = await res.json();
-            console.log(jsonRes);
+            console.log(jsonRes); 
             jsonRes.forEach((curEle) => {
                 console.log(curEle);
                 // document.getElementById("divtag").innerHTML += `<p>${curEle.id} ${curEle.title}</p>`
