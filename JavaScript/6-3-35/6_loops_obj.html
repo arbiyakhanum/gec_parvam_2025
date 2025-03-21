@@ -21,11 +21,12 @@
 
         //1.for in loop
         for (let i in obj1) { //obj1.i will not work here 
-            console.log(obj1[i]);//or  
+            console.log("for in loop", obj1[i]);//or  
             // console.log(obj1[`${i}`]);
         }
 
         //2. object.keys()
+
         const obj2 = {
             firstname: "Habiba",
             age: 21,
@@ -36,7 +37,7 @@
         console.log('The result is:', res);
 
         for (let item of res) {
-            console.log(obj2[item]);
+            console.log("keys:", obj2[item]);
         }
 
     </script>

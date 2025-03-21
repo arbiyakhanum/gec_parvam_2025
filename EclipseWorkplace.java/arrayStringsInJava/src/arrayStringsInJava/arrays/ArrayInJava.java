@@ -1,7 +1,5 @@
 package arrayStringsInJava.arrays;
 
-import java.util.Scanner;
-
 public class ArrayInJava {
 
 	public static void main(String[] args) {

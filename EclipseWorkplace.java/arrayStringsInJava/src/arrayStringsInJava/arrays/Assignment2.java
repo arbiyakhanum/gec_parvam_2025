@@ -27,6 +27,7 @@ public class Assignment2 {
 				
 			}
 			System.out.println();
+			sc.close();
 			
 		}
 		

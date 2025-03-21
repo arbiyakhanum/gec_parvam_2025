@@ -1,6 +1,5 @@
 package arrayStringsInJava.arrays;
 
-import java.util.Iterator;
 
 public class ArrayinJava2 {
 
