@@ -8,4 +8,11 @@
     <fullyQualifiedTypeName name="oopsInJava.Inheritance.Student"/>
     <fullyQualifiedTypeName name="oopsInJava.Inheritance.ParentClass2"/>
     <fullyQualifiedTypeName name="oopsInJava.Inheritance.Interfacenew"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="final_this_super.NewAnimal"/>
+    <fullyQualifiedTypeName name="concreteClass.Student"/>
+    <fullyQualifiedTypeName name="java.io.PrintWriter"/>
+    <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
+    <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
 </qualifiedTypeNameHistroy>

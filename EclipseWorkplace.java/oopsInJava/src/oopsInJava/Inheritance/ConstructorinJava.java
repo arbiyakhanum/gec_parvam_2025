@@ -9,7 +9,6 @@ class Student1 {
 	public double marks = 95.89;
 
 	// full args constructor
-	
 
 	public Student1(int age, String name, double marks) {
 		System.out.println("Full args Constructor");
@@ -17,16 +16,12 @@ class Student1 {
 		this.name = name;
 		this.marks = marks;
 	}
-	
-	
 
-	
+//no-args constructor
+
 	public Student1() {
 		System.out.println("No args constructor");
 	}
-
-
-
 
 	// actions
 	public void isPlaying() {
@@ -49,10 +44,10 @@ class Student1 {
 
 public class ConstructorinJava {
 	public static void main(String[] args) {
-		
-		Student1 std1=new Student1(12, "bushra", 3823.3276);
+
+		Student1 std1 = new Student1(12, "bushra", 3823.3276);
 		std1.display();
-		Student1 std2= new Student1();
+		Student1 std2 = new Student1();
 		std2.display();
 
 	}
