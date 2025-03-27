@@ -12,7 +12,7 @@ public class GenericsInJava {
 		 * then we should go for generics
 		 * 
 		 */
-		char [] arr= {'a','b','c'}; //type safety -using char
+		char [] arr= {'a','b','c'}; //type safety - using char
 		char firstEle=arr[0];
 		System.out.println(firstEle);
 		

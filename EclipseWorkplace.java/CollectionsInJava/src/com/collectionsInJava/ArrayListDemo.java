@@ -12,8 +12,8 @@ public class ArrayListDemo {
 		 *--> Array List underline data structures is Dynamic array
 		 *--> Array list allow duplicate
 		 *--> Arraylist allow random Access(using index)
-		 *-->ArrayList will allow null value
-		 *--> ArrayList woll preserve the order of insertion
+		 *--> ArrayList will allow null value
+		 *--> ArrayList will preserve the order of insertion
 		 *
 		 */
 
