@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author arbiy
+ *
+ */
+module dependencyInjection {
+}
