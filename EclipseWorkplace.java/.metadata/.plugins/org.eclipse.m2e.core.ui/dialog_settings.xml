@@ -3,6 +3,8 @@
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
 			<item value="C:\Users\arbiy\Desktop\Parvam\gec_parvam_2025\EclipseWorkplace.java\FirstWebApp"/>
+			<item value="C:\Users\arbiy\Desktop\Parvam\gec_parvam_2025\EclipseWorkplace.java\CollectionsInJava"/>
+			<item value="C:\Users\arbiy\Desktop\Parvam\gec_parvam_2025\EclipseWorkplace.java\formValidation"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
