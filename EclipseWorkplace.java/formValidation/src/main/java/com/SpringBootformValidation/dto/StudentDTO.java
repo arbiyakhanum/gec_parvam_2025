@@ -1,5 +1,7 @@
 package com.SpringBootformValidation.dto;
 
+import org.springframework.web.multipart.MultipartFile;
+
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
 
@@ -17,6 +19,14 @@ public class StudentDTO {
 	@NotBlank(message="Student password is required")
 	private String password;
 	
+	private MultipartFile image;
+	
+	public MultipartFile getImage() {
+		return image;
+	}
+	public void setImage(MultipartFile image) {
+		this.image = image;
+	}
 	public String getName() {
 		return name;
 	}

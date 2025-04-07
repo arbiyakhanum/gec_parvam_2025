@@ -1,12 +1,21 @@
 package com.SpringBootformValidation.service;
 
 
+import java.io.InputStream;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
+import java.util.Date;
 import java.util.List;
 import org.springframework.stereotype.Service;
+import org.springframework.web.multipart.MultipartFile;
 
 import com.SpringBootformValidation.dto.StudentDTO;
 import com.SpringBootformValidation.models.Student;
 import com.SpringBootformValidation.repository.StudentRepository;
+
+
 
 @Service
 public class StudentService {
@@ -24,11 +33,35 @@ public class StudentService {
 		}
 
 	public void saveStudent(StudentDTO studentDTO) {
+		MultipartFile image= studentDTO.getImage();
+		Date createdAt = new Date();
+		String storeImageName= createdAt.getTime()+"_"+image.getOriginalFilename();
+		
+		try {
+			String uploadDir="public/images";
+			Path uploadPath= Paths.get(uploadDir);
+			if(!Files.exists(uploadPath)) {
+				Files.createDirectories(uploadPath);
+			}
+			
+		try {
+			InputStream inputStream=image.getInputStream();
+			Files.copy(inputStream, Paths.get(uploadDir+storeImageName),StandardCopyOption.REPLACE_EXISTING);
+			
+		} catch (Exception e) {
+		System.out.println(e.getMessage());
+		}
+			
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+		
 		Student student =new Student();
 		student.setName(studentDTO.getName());
 		student.setEmail(studentDTO.getEmail());
 		student.setAge(studentDTO.getAge());
 		student.setPassword(studentDTO.getPassword());
+		student.setImagePath(storeImageName);
 		studentRepository.save(student);
 		
 	}

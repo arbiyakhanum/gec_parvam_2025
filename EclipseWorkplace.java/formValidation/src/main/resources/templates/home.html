@@ -2,9 +2,9 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Home</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home</title>
 </head>
 
 <body>
@@ -17,6 +17,7 @@
 				<th>Name</th>
 				<th>Age</th>
 				<th>Email</th>
+				<th>Image</th>
 				<th>Action</th>
 			</tr>
 		</thead>
@@ -26,8 +27,10 @@
 				<td th:text="${student.name}"></td>
 				<td th:text="${student.age}"></td>
 				<td th:text="${student.email}"></td>
+				<td><img alt="image" style="width:100px; height: 100px;" th:src="@{'images/'+${student.imagePath}}">
+				</td>
 				<td>
-					<a th:href="@{/std-edit(id=${student.id})}">Edit</a> 
+					<a th:href="@{/std-edit(id=${student.id})}">Edit</a>
 					<a th:href="@{/std-delete(id=${student.id})}">Delete</a>
 				</td>
 			</tr>

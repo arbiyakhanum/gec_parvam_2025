@@ -23,6 +23,12 @@
         <label>Password:</label>
         <p th:if="${#fields.hasErrors('password')}" th:errors="*{password}"> </p>
         <input type="password" name="std_password" th:field="*{password}" placeholder="Enter your password"><br><br>
+        
+        <label for="image">Image</label>
+        <img alt="image" style="width:100px; height: 100px;" th:src="@{'images/'+${student.imagePath}}">
+        <input type="file" id="image" th:field="*{image}"><br>
+        <p th:if="${#fields.hasErrors('image')}" th:errors="*{image}"> </p>
+        
         <Button type="submit">Edit Student</Button>
     </form>
 

@@ -31,7 +31,30 @@ public class Student {
 	@Column(name="std_password")
 	private String password;
 	
+	@Column(name="imagePath")
+	private String imagePath;
 	
+	public String getImagePath() {
+		return imagePath;
+	}
+
+	public void setImagePath(String imagePath) {
+		this.imagePath = imagePath;
+	}
+
+	public Student(long id, String name, int age, String email, String password, String imagePath) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.age = age;
+		this.email = email;
+		this.password = password;
+		this.imagePath = imagePath;
+	}
+
+	public Student() {
+		super();
+	}
 
 	public long getId() {
 		return id;
@@ -53,8 +76,8 @@ public class Student {
 		return age;
 	}
 
-	public void setAge(int age) {
-		this.age = age;
+	public void setAge(int i) {
+		this.age = i;
 	}
 
 	public String getEmail() {
@@ -74,4 +97,3 @@ public class Student {
 	}
 
 }
-
