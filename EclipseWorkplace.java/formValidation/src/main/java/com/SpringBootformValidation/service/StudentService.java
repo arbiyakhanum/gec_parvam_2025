@@ -68,6 +68,15 @@ public class StudentService {
 
 	public void deleteStudent(Long id) {
 		Student student = studentRepository.findById(id).get();
+		//what is the image path of the student
+		String uploadDir ="public/images/";
+		Path imagePath = Paths.get(uploadDir+student.getImagePath());
+		try {
+			Files.delete(imagePath);
+			
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
 		studentRepository.delete(student);
 		
 	}
