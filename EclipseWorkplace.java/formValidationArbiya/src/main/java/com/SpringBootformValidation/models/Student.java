@@ -25,7 +25,7 @@ public class Student {
 	@Column(name="std_age")
 	private int age;
 	
-	@Column(name="std_email")
+	@Column(name="std_email",unique=true)
 	private String email;
 	
 	@Column(name="std_password")
