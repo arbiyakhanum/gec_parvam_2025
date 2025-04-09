@@ -1,43 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid</title>
     <style>
-        .container{
+        .container {
             width: 50vw;
             height: 80vh;
             border: 3px solid black;
             display: grid;
-            grid-template-columns:auto auto auto;
+            grid-template-columns: auto auto auto;
             grid-template-rows: 120px 200px auto;
             /* column-gap: 20px; */
             /* row-gap: 20px; */
-            gap:20px;
-            padding:10px;    
+            gap: 20px;
+            padding: 10px;
         }
 
-        .child{
-            border: 2px solid red; 
+        .child {
+            border: 2px solid red;
             display: flex;
-           justify-content: center;
+            justify-content: center;
             align-items: center;
         }
 
-        .fiv{
+        .fiv {
             grid-column: 2/span 2;
         }
 
-        .four{
+        .four {
             grid-row: 2/span 2;
         }
 
-        .six{
+        .six {
             grid-row: 3/span 2;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="child first">1</div>
@@ -51,4 +53,5 @@
         <div class="child nine">9</div>
     </div>
 </body>
+
 </html>
