@@ -9,22 +9,22 @@ we can authentication user in multiple ways
 ===========================================
 * username and password.
 * JWT(json web token) Token.
-* OAuth2.0 authentication - github, google, facebook.
+* OAuth2.0 authentication - GitHub, google, Facebook.
 
-* By default spring security will prodive username password authentication.
+* By default spring security will provide username password authentication.
 
 1. For Rest API spring boot, spring security will provide HTTPBasicAuthentication.
 2. For MVC Spring will provide formBasedAuthentication.
 * for these two we will use username and password.
 
-httpBasicAUthentiaction:
+httpBasicAuthentication:
 ========================
 * we can pass username and password in auth tab by selecting basic auth 
 
-* headers we have ot pass by 
-"Baisc username:password" -> in Base64 encode
+* headers we have to pass by 
+"Basic username: password" -> in Base64 encode
 
-murthy:Murthy@123 -> Baisc bXVydGh5Ok11cnRoeUAxMjM=
+murthy:Murthy@123 -> Basic bXVydGh5Ok11cnRoeUAxMjM=
 
 
 Authentication Architecture:
@@ -64,16 +64,16 @@ UsernamePasswordAuthenticationToken
 * it has only one method called "authenticate".
 * the job of Authentication Manager is to provide fully authenticated object(Authentication object).
 
-* authenticate -> it is a method present in Authentication Manager it will take Authentication request as parameter and return fully athentcated object
+* authenticate -> it is a method present in Authentication Manager it will take Authentication request as parameter and return fully authenticated object
 
-* ProviderManager -> it a class that give implemention for athentcate method present in AuthenticationManager.
+* ProviderManager -> it a class that give implementation for authenticate method present in AuthenticationManager.
 
 
 fully authentication object:
 ============================
 it contains
 
-1.Principal - Means user information email,name, expriation
+1.Principal - Means user information email, name, expiration
 2. credentials - password (after authenticateduser it will be null, for security reasons)
 3. authorities - roles
 
@@ -87,7 +87,7 @@ important implementing classes:
 ===============================
 DaoAuthenticationProvider, JwtAuthenticationProvider, OAuth2LoginAuthenticationProvider
 
-* providerManager will not give a implemention for authenticate method.
+* providerManager will not give a implementation for authenticate method.
 * providerManager has list of AuthenticationProviders
 
 authentication mechanism       providerManager(take help)
@@ -96,14 +96,14 @@ authentication mechanism       providerManager(take help)
  JWt ------------------------> JwtAuthenticationProvider
  OAuth2 ---------------------> OAuth2LoginAuthenticationProvider.
  
-* One of the AuthenticationProviders will give the implemention for athentcate method.
+* One of the AuthenticationProviders will give the implementation for authenticate method.
 
 AuthenticationEntryPoint:
 =========================
-* it is an interface present inside "org.springframework.security.web" pckages
+* it is an interface present inside "org.springframework.security.web" packages
 * when we are talking about AuthenticationEntryPoint we are taking about its implementing classes.
-* it is a entry point for authenticated request(given credetials(username and password) or not).
-* when ever the user will not provide credentials(unauthenticated request) it will rediretc to /login page.
+* it is a entry point for authenticated request(given credentials(username and password) or not).
+* when ever the user will not provide credentials(unauthenticated request) it will redirect to /login page.
 
 
 AbstractAuthenticationProcessingFilter:
@@ -119,8 +119,8 @@ OAuth2LoginAuthenticationFilter, UsernamePasswordAuthenticationFilter
 * the job of AbstractAuthenticationProcessingFilter is to modify the http request into authenticated request and will pass to AuthenticationManager.
 
 
-* the main goal of sprig secirty is to create a store the authentication object in securityContext.
+* the main goal of sprig security is to create a store the authentication object in securityContext.
 
 SecurityContextHolder :
 =======================
-* it is a warpper around securityContext
+* it is a wrapper around securityContext

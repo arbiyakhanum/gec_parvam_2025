@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Add Employee</title>
+<style>
+body {
+	margin: 100px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background-color: #f7f1fa;
+	color: #3d2c4a;
+}
+
+h1 {
+	text-align: center;
+	color: #5e3b76;
+	margin-bottom: 40px;
+}
+
+form {
+	max-width: 500px;
+	margin: auto;
+	background-color: #ffffff;
+	padding: 30px;
+	border-radius: 12px;
+	box-shadow: 0 8px 16px rgba(93, 59, 119, 0.1);
+}
+
+label {
+	display: block;
+	margin-top: 20px;
+	font-weight: 500;
+	color: #4e2a68;
+}
+
+input[type="text"], input[type="number"], input[type="email"], input[type="password"],
+	input[type="file"] {
+	width: 100%;
+	padding: 10px;
+	margin-top: 6px;
+	border: 1px solid #c8b2d9;
+	border-radius: 6px;
+	box-sizing: border-box;
+	background-color: #faf6fc;
+	color: #3d2c4a;
+}
+
+input[type="file"] {
+	background-color: #ffffff;
+}
+
+input[type="submit"] {
+	margin-top: 30px;
+	width: 100%;
+	background-color: #7e57c2;
+	color: white;
+	padding: 12px;
+	border: none;
+	border-radius: 8px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+	background-color: #6a4c9c;
+}
+
+p {
+	color: #b00020;
+	font-size: 14px;
+	margin-top: 5px;
+}
+</style>
+
+</head>
+<body style="margin: 100px;">
+	<h1>Add Employee</h1>
+
+	<form th:action="@{/add-employee}" enctype="multipart/form-data"
+		method="post" th:object="${employeeDTO}" novalidate>
+		<label for="name">Name:</label> <input type="text" th:field="*{name}"
+			name="name" id="name" placeholder="Enter employee name" required><br>
+		<p th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></p>
+
+		<label for="age">Age:</label> <input type="number" th:field="*{age}"
+			name="age" id="age" placeholder="Enter employee age" required><br>
+		<p th:if="${#fields.hasErrors('age')}" th:errors="*{age}"></p>
+
+		<label for="email">Email:</label> <input type="email"
+			th:field="*{email}" name="email" id="email"
+			placeholder="Enter employee email" required><br>
+		<p th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></p>
+
+		<label for="password">Password:</label> <input type="password"
+			th:field="*{password}" name="password" id="password"
+			placeholder="Enter employee password" required><br>
+		<p th:if="${#fields.hasErrors('password')}" th:errors="*{password}"></p>
+
+		<label for="image">Image</label> <input type="file" id="image"
+			th:field="*{image}"><br>
+		<p th:if="${#fields.hasErrors('image')}" th:errors="*{image}"></p>
+
+		<label for="document">Document</label> <input type="file"
+			id="document" th:field="*{document}"><br>
+		<p th:if="${#fields.hasErrors('document')}" th:errors="*{document}"></p>
+
+		<input type="submit" value="Add Employee">
+	</form>
+</body>
+</html>
