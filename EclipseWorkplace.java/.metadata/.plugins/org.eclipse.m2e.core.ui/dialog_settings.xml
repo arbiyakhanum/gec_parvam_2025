@@ -2,6 +2,8 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\arbiy\Desktop\Parvam\gec_parvam_2025\EclipseWorkplace.java\springSecurityDemo6"/>
+			<item value="C:\Users\arbiy\Desktop\Parvam\gec_parvam_2025\EclipseWorkplace.java\springSecurityDemo5"/>
 			<item value="C:\Users\arbiy\Desktop\Parvam\gec_parvam_2025\EclipseWorkplace.java\employeevalidation"/>
 			<item value="C:\Users\arbiy\Desktop\Parvam\gec_parvam_2025\EclipseWorkplace.java\springSecurityDemo"/>
 			<item value="C:\Users\arbiy\Desktop\Parvam\gec_parvam_2025\EclipseWorkplace.java\formValidation"/>
@@ -13,6 +15,7 @@
 			<item value="C:\Users\arbiy\Desktop\Parvam\gec_parvam_2025\EclipseWorkplace.java\CollectionsInJava"/>
 		</list>
 		<list key="projectNameTemplate">
+			<item value="springsecurity"/>
 			<item value="Form_Validation"/>
 			<item value="[artifactId]"/>
 			<item value="[artifactId]-TRUNK"/>
