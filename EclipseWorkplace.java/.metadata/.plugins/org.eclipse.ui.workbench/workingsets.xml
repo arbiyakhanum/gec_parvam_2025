@@ -5,6 +5,7 @@
 <workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1746249970123_4" label="springSecurityDemo" name="springSecurityDemo">
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/springSecurityDemo5" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/springSecurityDemo6" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/springSecurityDemo7" type="4"/>
 </workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1743586300060_2" label="Window Working Set" name="Aggregate for window 1743586300060"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1743590539468_3" label="Window Working Set" name="Aggregate for window 1743590539468"/>

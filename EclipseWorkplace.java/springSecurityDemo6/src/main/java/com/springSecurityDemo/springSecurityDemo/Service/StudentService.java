@@ -24,8 +24,6 @@ public class StudentService {
 		student.setEmail(studentDTO.getEmail());
 		student.setPassword(passwordEncoder.encode(studentDTO.getPassword()));
 		student.setRole("ROLE_USER");
-		studentRepository.save(student);
-		
-	
+		studentRepository.save(student);		
 	}
 }
